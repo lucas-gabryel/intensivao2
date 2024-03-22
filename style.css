@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    width: 37rem;
+
+    background-color: #F9F4FB;
+
+    margin: auto;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#banner {
+    width: 37rem;
+    height: 37rem;
+}
+
+#home p, h1 {
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: #B52184;
+
+    margin-top: 1.7rem;
+}
+
+#home p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #312D64;
+
+    margin-top: 0.5rem;
+}
+
+#home > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home div div img {
+    height: 10.5rem;
+    width: 5.8rem;
+
+    margin-top: 3.5rem;
+    margin-bottom: 9.3rem;
+}
+
+#about {
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#about .cards {
+    padding-block: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+#about .card {
+    background-color: white;
+    width: 33rem;
+    height: 35rem;
+
+    border-radius: 1.9rem;
+
+    padding: 2.65rem;
+}
+
+#about .card img {
+    width: 8rem;
+    height: 8rem;
+}
+
+#about .card h3 {
+    font-size: 2.9rem;
+    font-weight: 900;
+    color: #B52184;
+
+    margin-top: 3.3rem;
+}
+
+#about .card p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #312D64;
+
+    text-align: justify;
+
+    margin-top: 1rem;
+}
+
+#contact {
+    width: 33rem;
+
+    margin: auto;
+    margin-block: 6rem;
+}
+
+#contact fieldset {
+    border: none;
+}
+
+#contact legend {
+    font-size: 3.2rem;
+    color: #B52184;
+    font-weight: 900;
+    text-align: center;
+}
+
+#contact .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    margin-top: 4.3rem;
+}
+
+#contact .input-model {
+    width: 330px;
+}
+
+#contact input, textarea, button {
+    font-family: 'Mulish', sans-serif;
+}
+
+#contact .input-model input {
+    width: 330px;
+    height: 48px;
+
+    border: solid 1.5px #312D64;
+    border-radius: 1.6rem;
+}
+
+#contact .input-model input::placeholder {
+   padding-inline: 48px;
+}
+
+textarea::placeholder {
+    padding-inline: 16px;
+    padding-block: 12px;
+}
+
+#name {
+     background: url(./img/person.png) no-repeat  1.4rem 1.2rem;
+}
+
+#email {
+    background: url(./img/at.png) no-repeat 1.4rem 1.2rem;
+}
+
+#contact .input-model textarea {
+    width: 330px;
+    height: 126px;
+
+    background-color: #F9F4FB;
+
+    border: solid 1.5px #312D64;
+    border-radius: 1.6rem;
+}
+
+#contact button {
+    width: 15rem;
+    height: 4.5rem;
+
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+    border: none;
+    border-radius: 1.6rem;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+footer {
+    height: 7.8rem;
+
+    background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: white;
+}
+
+@media (min-width: 1440px) {
+    body {
+        width: 100vw;  
+    }
+
+    #home {
+        flex-direction: row-reverse;
+        gap: 2.8rem;
+
+        width: 121.6rem;
+        margin: auto;
+
+        margin-bottom: 10.3rem;
+    }
+
+    #banner {
+        width: 71rem;
+        height: 71rem;
+        object-fit: cover;
+    }
+
+    #home h1 {
+        font-size: 5.8rem;
+    
+        margin-top: 1rem;
+    }
+    
+    #home p {
+        font-size: 3.2rem;
+        text-align: left;
+        margin-top: 0.8rem;
+    }
+    
+    #home > div:nth-child(2) {
+        align-items:baseline;
+    }
+    
+    #home div div img {
+        margin-top: 17.9rem;
+    }
+    
+    #about .cards {
+        padding-block: 4rem;
+        display: flex;
+        flex-direction: row;
+        gap: 6rem; 
+    }
+    
+    #about .card {
+        width: 36.6rem;
+        height: 44.8rem;
+    
+        padding: 2.65rem;
+    }
+    
+    #about .card img {
+        width: 9.7rem;
+        height: 9.7rem;
+    }
+    
+    #about .card h3 {
+        font-size: 3.53rem;
+    
+        margin-top: 4rem;
+    }
+    
+    #about .card p {
+        font-size: 1.9rem;
+    
+        margin-top: 2.4rem;
+    }
+
+    #contact {
+        width: 100%;
+    
+        margin: auto;
+        padding-block: 9.5rem;
+
+        background: url(./img/background.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    
+    #contact fieldset {
+        border: none;
+        width: 121.6rem;
+        margin: auto;
+    }
+    
+    #contact legend {
+        font-size: 4.2rem;
+        text-align: left;
+    }
+    
+    #contact .inputs {
+        gap: 2.4rem;
+    
+        margin-top: 3rem;
+    }
+    
+    #contact .input-model {
+        width: 59.2rem;
+    }
+    
+    #contact .input-model input {
+        width: 59.2rem;
+        height: 4.8rem;
+    }
+    
+    #contact .input-model textarea {
+        width: 59.2rem;
+        height: 12.6rem;
+    }
+
+    #contact .stars {
+        flex: 1;
+      }
+}
